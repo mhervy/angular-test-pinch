@@ -8,6 +8,9 @@ p {
   width: 200px;
 }
 
-body {
+
+.contentDiv {
+  width: 100vw;
+  height: 100vh;
   touch-action: none;
 }
