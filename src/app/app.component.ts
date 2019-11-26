@@ -1,5 +1,4 @@
 import { Component, ViewChild } from '@angular/core';
-import 'hammerjs';
 
 @Component({
   selector: 'my-app',
