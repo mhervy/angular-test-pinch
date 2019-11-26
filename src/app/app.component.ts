@@ -9,9 +9,13 @@ export class AppComponent  {
 
   @ViewChild('testdiv', {static: false}) contentImg: any;
   name = 'Angular';
+  public value: string;
 
   onPinch(event) {
     const el = this.contentImg.nativeElement;
+    console.log(event);
+    console.log(event.scale);
+    
     // Seulement testable une fois publier car seulement possible sur mobile
     if (event.scale > 1) {
       el.style.transform = 'scale(' +  (1 * + event.scale) + ')';
