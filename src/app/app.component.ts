@@ -12,6 +12,7 @@ export class AppComponent  {
   public value: string;
 
   onPinch(event) {
+    console.log(this.contentImg);
     const el = this.contentImg.nativeElement;
     console.log(event);
     console.log(event.scale);
@@ -23,6 +24,7 @@ export class AppComponent  {
   }
 
   test() {
+    console.log('hi');
     const el = this.contentImg.nativeElement;
     // Seulement testable une fois publier car seulement possible sur mobile
     
